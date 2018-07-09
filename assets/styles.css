@@ -1,0 +1,93 @@
+html, body {
+  background: rgba(16, 171, 255, 0.5);
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Space Mono', monospace;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+}
+
+.bg {
+  background-image: url('storybridge.jpg');
+  background-size: cover;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: blur(2px);
+}
+
+.brand, .footer {
+  background: #fff;
+}
+
+.brand {
+  background: #fff;
+  padding: 7vw;
+}
+
+.footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Space Mono';
+  position: fixed;
+}
+
+.footer > ul {
+  list-style: none;
+  display: flex;
+}
+
+.footer li {
+  font-size: 1.2rem;
+}
+
+.footer li + li {
+  margin-left: 2rem;
+}
+
+.footer a {
+  color: #000;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+@media (max-width: 700px) {
+  .brand {
+    margin-bottom: 10vh;
+  }
+
+  .brand svg {
+    width: 250px;
+  }
+
+  .footer > ul {
+    flex-direction: column;
+  }
+
+  .footer li + li {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+}
