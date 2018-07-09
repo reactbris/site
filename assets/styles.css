@@ -74,8 +74,8 @@ body {
 }
 
 @media (max-width: 700px) {
-  .brand {
-    margin-bottom: 10vh;
+  body {
+    justify-content: flex-start;
   }
 
   .brand svg {
