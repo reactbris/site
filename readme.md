@@ -1,5 +1,5 @@
 # ReactBris Site
-[ReactBris.org](https://www.reactbris.org)
+[ReactBris.org](https://reactbris.org)
 
 ## Getting Started
 
