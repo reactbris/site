@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "name": "reactbris.org",
+  "alias": "reactbris.org",
+  "builds": [
+    { "src": "package.json", "use": "@now/next" }
+  ]
+}

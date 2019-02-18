@@ -1,0 +1,29 @@
+{
+  "name": "reactbris.org",
+  "version": "1.0.0",
+  "description": "ReactBris website.",
+  "main": "src/pages/index.js",
+  "repository": "git@github.com:reactbris/site.git",
+  "author": "Lochlan Bunn <bunn@lochlan.io>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "next dev ./src",
+    "build": "next build ./src",
+    "start": "next start ./src",
+    "now-start": "next start ./src --port $PORT",
+    "lint": "prettier --write \"**/*.js\""
+  },
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "isomorphic-fetch": "^2.2.1",
+    "meetup-api": "^1.4.37",
+    "next": "^8.0.1",
+    "react": "^16.8.2",
+    "react-dom": "^16.8.2"
+  },
+  "devDependencies": {
+    "babel-plugin-inline-react-svg": "^1.0.1",
+    "prettier": "^1.16.4"
+  }
+}

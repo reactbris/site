@@ -1,0 +1,164 @@
+html, body {
+  background: #FEFBEF;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Space Mono', monospace;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+  /* background: url(/static/logo-react.svg); */
+  background-size: 110px 40px;
+  /* background-repeat: repeat; */
+  /* background-position: 0px 0px; */
+}
+
+.bgs {
+  top:0;
+  bottom:0;
+  right:0;
+  left:0;
+  position: absolute;
+  overflow: hidden;
+}
+
+.bg {
+  top: -42px;
+  bottom: -42px;
+  right: -124px;
+  left: -120px;
+  position: absolute;
+  /* background: url(/static/logo-react.svg); */
+  /* background-size: 9% 2.5%; */
+  /* background-repeat: repeat; */
+  /* background-position: right 10px top 0px; */
+  /* z-index: 0; */
+  background: url(/static/logo-react.svg);
+  background-size: 110px 40px;
+  background-repeat: repeat;
+  background-position: 0px 0px;
+  animation: 1s scrollbackground linear infinite both running;
+}
+
+@keyframes scrollbackground {
+  from {
+    transform: translate(0px,0px);
+  }
+  to {
+    transform: translate(0px,40px);
+  }
+}
+
+.footer {
+  background: #59005B;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: transparent;
+  flex-direction: column;
+  animation: 30s scrolllogo linear infinite both running;
+  top: -550px;
+  bottom: -550px;
+  right: 0;
+  left: 0;
+  position: absolute;
+}
+
+@keyframes scrolllogo {
+  from {
+    transform: translate(0px,0px);
+  }
+  to {
+    transform: translate(0px,-510px);
+  }
+}
+
+.brand svg {
+  width: auto;
+  height: 380px;
+  transform: rotate(-10deg);
+  flex: 0 0 auto;
+}
+
+.brand * + * {
+  margin-top: -125px;
+}
+
+.brand svg path {
+  fill: #FCBFD3;
+  stroke: #59005B;
+  stroke-width: 0.3px;
+}
+
+.footer {
+  background: #E61C5D;
+  border-top: #59005B 2px solid;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Space Mono';
+  position: fixed;
+}
+
+.footer > ul {
+  list-style: none;
+  display: flex;
+}
+
+.footer li {
+  font-size: 1.8rem;
+}
+
+.footer li + li {
+  margin-left: 2rem;
+}
+
+.footer a {
+  display: block;
+  color: #FEFBEF;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  padding: 0.6rem;
+  transition: all 250ms ease;
+}
+
+.footer a:hover,
+.footer a:active,
+.footer a:focus {
+  color: #FEFBEF;
+  text-shadow: 0 4px #59005B;
+  transform: translate(0, -2px);
+}
+
+@media (max-width: 850px) {
+  body {
+    justify-content: flex-start;
+  }
+
+  .footer > ul {
+    flex-direction: column;
+  }
+
+  .footer li + li {
+    margin-left: 0;
+    margin-top: 2rem;
+  }
+}
