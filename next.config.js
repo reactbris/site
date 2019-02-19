@@ -1,6 +1,9 @@
 const withCSS = require("@zeit/next-css");
 
-module.exports = {
-  ...withCSS(),
-  target: "serverless"
-};
+const config = withCSS();
+
+if (process.env.NOW_REGION) {
+  config.target = "serverless";
+}
+
+module.exports = config;

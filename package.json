@@ -2,15 +2,15 @@
   "name": "reactbris.org",
   "version": "2.0.0",
   "description": "ReactBris website.",
-  "main": "server.js",
   "repository": "git@github.com:reactbris/site.git",
   "author": "Lochlan Bunn <bunn@lochlan.io>",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "node server.js",
+    "dev": "next dev",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js",
+    "start": "next start",
+    "now-start": "next start --port $PORT",
     "lint": "prettier --write \"{pages,static}**/*.{js,css,md}\" --write \"{package,now}.json\" --write \"now.config.js\""
   },
   "dependencies": {

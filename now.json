@@ -1,6 +1,16 @@
 {
   "version": 2,
+  "public": false,
   "name": "reactbris.org",
   "alias": "reactbris.org",
-  "builds": [{ "src": "package.json", "use": "@now/next" }]
+  "builds": [{ "src": "package.json", "use": "@now/next" }],
+  "github": {
+    "silent": true
+  },
+  "routes": [
+    {
+      "src": "/static/.+\\.(svg|png|jpg)(\\?.*)?$",
+      "headers": { "cache-control": "public, max-age=31536000, immutable" }
+    }
+  ]
 }
