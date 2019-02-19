@@ -34,6 +34,7 @@ body {
 }
 
 .bg {
+  opacity: 0;
   top: -42px;
   bottom: -42px;
   right: -124px;
@@ -49,6 +50,11 @@ body {
   background-repeat: repeat;
   background-position: 0px 0px;
   animation: 1s scrollbackground linear infinite both running;
+  transition: opacity 100ms ease-in-out;
+}
+
+.loaded .bg {
+  opacity: 1;
 }
 
 @keyframes scrollbackground {
@@ -70,7 +76,7 @@ body {
   justify-content: flex-start;
   background: transparent;
   flex-direction: column;
-  animation: 30s scrolllogo linear infinite both running;
+  animation: 20s scrolllogo linear infinite both running;
   top: -550px;
   bottom: -550px;
   right: 0;
@@ -83,7 +89,7 @@ body {
     transform: translate(0px, 0px);
   }
   to {
-    transform: translate(0px, -510px);
+    transform: translate(0px, -255px);
   }
 }
 
@@ -129,6 +135,10 @@ body {
 
 .footer li + li {
   margin-left: 2rem;
+}
+
+a {
+  color: #e61c5d;
 }
 
 .footer a {

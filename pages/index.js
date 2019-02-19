@@ -45,6 +45,11 @@ class IndexPage extends Component {
             type="image/x-icon"
             href="/static/favicon.ico"
           />
+          <script>{`
+          window.addEventListener('load', () => {
+            document.body.classList.add("loaded");
+          })
+          `}</script>
         </Head>
 
         <div className="bgs">
