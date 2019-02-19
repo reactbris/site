@@ -73,12 +73,12 @@ body {
 .brand {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   background: transparent;
   flex-direction: column;
-  animation: 20s scrolllogo linear infinite both running;
-  top: -550px;
-  bottom: -550px;
+  /* animation: 20s scrolllogo linear infinite both running; */
+  top: 0;
+  bottom: 0;
   right: 0;
   left: 0;
   position: absolute;
@@ -94,34 +94,32 @@ body {
 }
 
 .brand svg {
-  width: auto;
-  height: 380px;
-  transform: rotate(-10deg);
   flex: 0 0 auto;
-}
-
-.brand * + * {
-  margin-top: -125px;
+  width: 70vw;
+  height: auto;
+  margin-top: -10vh;
 }
 
 .brand svg path {
-  fill: #fcbfd3;
-  stroke: #59005b;
-  stroke-width: 0.3px;
+  stroke: #00153d;
+  stroke-width: 1.5px;
 }
 
 .footer {
   background: #e61c5d;
-  border-top: #59005b 2px solid;
+  border: #00153d 1rem solid;
+  border-bottom: none;
   bottom: 0;
-  left: 0;
-  right: 0;
+  left: 4vw;
+  right: 4vw;
   padding: 3vh;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Space Mono";
   position: fixed;
+  border-top-left-radius: 6rem;
+  border-top-right-radius: 6rem;
 }
 
 .footer > ul {
@@ -159,9 +157,36 @@ a {
   transform: translate(0, -2px);
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1124px) {
+  .footer {
+    border-right: none;
+    border-left: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .brand svg {
+    width: 80vw;
+  }
+}
+
+@media (max-width: 930px) {
   body {
     justify-content: flex-start;
+  }
+  .footer {
+    border-top: #b11047 1px solid;
+  }
+
+  .brand svg {
+    width: 115vw;
+    margin-top: -20vh;
+  }
+
+  .footer li {
+    font-size: 1.6rem;
   }
 
   .footer > ul {

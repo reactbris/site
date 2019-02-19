@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Head from "next/head";
-import LogoBris from "../components/logo-bris.svg";
+import BrisLogos from "../components/logo-bris.js";
 
 const colors = {
   grey1: "#333333",
@@ -56,14 +56,7 @@ class IndexPage extends Component {
           <div className="bg" />
 
           <div className="brand">
-            <LogoBris />
-            <LogoBris />
-            <LogoBris />
-            <LogoBris />
-            <LogoBris />
-            <LogoBris />
-            <LogoBris />
-            <LogoBris />
+            <BrisLogos />
           </div>
         </div>
 
