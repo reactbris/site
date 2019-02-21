@@ -8,8 +8,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "build": "_LOCAL=true next build",
+    "start": "_LOCAL=true next start",
+    "now-build": "next build",
     "now-start": "next start --port $PORT",
     "lint": "prettier --write \"{pages,static}**/*.{js,css,md}\" --write \"{package,now}.json\" --write \"now.config.js\""
   },

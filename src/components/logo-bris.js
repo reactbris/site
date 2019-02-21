@@ -7,7 +7,11 @@ export default () => (
     viewBox="0 0 851 483"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    aria-labelledby="reactbris-hero-title reactbris-hero-desc"
+    role="img"
   >
+    <title id="reactbris-hero-title">ReactBris</title>
+    <desc id="reactbris-hero-desc">The ReactBris hero logo.</desc>
     <g filter="url(#filter0_ddd)">
       <mask
         id="a"
@@ -34,9 +38,9 @@ export default () => (
         width="851"
         height="482.26"
         filterUnits="userSpaceOnUse"
-        color-interpolation-filters="sRGB"
+        colorInterpolationFilters="sRGB"
       >
-        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+        <feFlood floodOpacity="0" result="BackgroundImageFix" />
         <feColorMatrix
           in="SourceAlpha"
           values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"

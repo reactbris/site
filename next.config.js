@@ -1,10 +1,18 @@
+const path = require("path");
 const withCSS = require("@zeit/next-css");
 
-const config = withCSS();
+const config = withCSS({
+  webpack: config => {
+    if (!config.resolve) config.resolve = {};
+    config.resolve.alias = {
+      ...(config.resolve.alias || {}),
+      src: path.resolve(__dirname, "./src")
+    };
+    return config;
+  }
+});
 
-console.log(JSON.stringify(process.env, null, 2));
-
-if (process.env.NODE_ENV === "production") {
+if (process.env._LOCAL !== "true") {
   config.target = "serverless";
 }
 

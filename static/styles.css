@@ -34,27 +34,17 @@ body {
 }
 
 .bg {
-  opacity: 0;
   top: -42px;
   bottom: -42px;
   right: -124px;
   left: -120px;
   position: absolute;
-  /* background: url(/static/logo-react.svg); */
-  /* background-size: 9% 2.5%; */
-  /* background-repeat: repeat; */
-  /* background-position: right 10px top 0px; */
-  /* z-index: 0; */
   background: url(/static/logo-react.svg);
   background-size: 110px 40px;
   background-repeat: repeat;
   background-position: 0px 0px;
   animation: 1s scrollbackground linear infinite both running;
   transition: opacity 100ms ease-in-out;
-}
-
-.loaded .bg {
-  opacity: 1;
 }
 
 @keyframes scrollbackground {
@@ -70,7 +60,7 @@ body {
   background: #59005b;
 }
 
-.brand {
+.hero {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -93,16 +83,35 @@ body {
   }
 }
 
-.brand svg {
+.hero svg {
   flex: 0 0 auto;
   width: 70vw;
   height: auto;
   margin-top: -10vh;
 }
 
-.brand svg path {
+.hero svg path {
   stroke: #00153d;
   stroke-width: 1.5px;
+}
+
+.page-error {
+  font-family: "Space Mono";
+  color: #fefbef;
+  background: #00153d;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+}
+
+.page-error h1 {
+  font-size: 20rem;
+  font-weight: 700;
+}
+
+.page-error p {
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 
 .footer {
@@ -137,12 +146,12 @@ body {
 
 a {
   color: #e61c5d;
+  text-decoration: none;
 }
 
 .footer a {
   display: block;
   color: #fefbef;
-  text-decoration: none;
   font-weight: 700;
   letter-spacing: 0.3px;
   padding: 0.6rem;
@@ -167,7 +176,7 @@ a {
     right: 0;
   }
 
-  .brand svg {
+  .hero svg {
     width: 80vw;
   }
 }
@@ -180,7 +189,7 @@ a {
     border-top: #b11047 1px solid;
   }
 
-  .brand svg {
+  .hero svg {
     width: 115vw;
     margin-top: -20vh;
   }
