@@ -11,6 +11,13 @@
     {
       "src": "/static/.+\\.(svg|png|jpg)(\\?.*)?$",
       "headers": { "cache-control": "public, max-age=31536000, immutable" }
+    },
+    {
+      "src": "/m/2019-03",
+      "status": 301,
+      "headers": {
+        "Location": "https://www.meetup.com/reactbris/events/rtkfsqyzfbhc/"
+      }
     }
   ]
 }
