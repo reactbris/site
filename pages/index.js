@@ -36,6 +36,11 @@ class IndexPage extends Component {
                 🐦 Twitter
               </a>
             </li>
+            <li>
+              <a href="/code-of-conduct" title="Code of Conduct">
+                📕 Code of Conduct
+              </a>
+            </li>
           </ul>
         </div>
       </>

@@ -3,10 +3,10 @@
 
 ## Getting Started
 
-Clone down this repo, and start hacking away.
+Clone down this repo, run `yarn` and start hacking away.
 
-It's plain ol' HTML & CSS right now, so you can preview it in any browser without start a dev server.
+`yarn dev` to start up the dev server, `yarn build` to build
 
 ## Legal
 
-Copyright © 2018 ReactBris
+Copyright © 2019 ReactBris

@@ -13,7 +13,7 @@ class Error extends React.Component {
     return (
       <>
         <PageHead />
-
+        <div className="skyline" />
         <Hero>
           <div className="page-error">
             <h1>{statusCode || errorMessage}</h1>
