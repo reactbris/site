@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import PageHead from "src/components/page-head";
 import BrisLogos from "src/components/logo-bris";
 import Hero from "src/components/hero";
@@ -6,7 +6,7 @@ import Hero from "src/components/hero";
 class IndexPage extends Component {
   render() {
     return (
-      <>
+      <Fragment>
         <PageHead />
 
         <Hero>
@@ -36,9 +36,14 @@ class IndexPage extends Component {
                 🐦 Twitter
               </a>
             </li>
+            <li>
+              <a href="/conduct" title="Code of Conduct">
+                📕 Code of Conduct
+              </a>
+            </li>
           </ul>
         </div>
-      </>
+      </Fragment>
     );
   }
 }

@@ -1,8 +1,8 @@
 html,
 body {
   background: #fefbef;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  min-height: 100vh;
   font-family: "Space Mono", monospace;
   font-size: 16px;
   box-sizing: border-box;
@@ -10,18 +10,15 @@ body {
 
 body {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: start;
   flex-direction: column;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
   position: absolute;
-  /* background: url(/static/logo-react.svg); */
   background-size: 110px 40px;
-  /* background-repeat: repeat; */
-  /* background-position: 0px 0px; */
 }
 
 .bgs {
@@ -29,7 +26,7 @@ body {
   bottom: 0;
   right: 0;
   left: 0;
-  position: absolute;
+  position: fixed;
   overflow: hidden;
 }
 
@@ -66,7 +63,6 @@ body {
   justify-content: center;
   background: transparent;
   flex-direction: column;
-  /* animation: 20s scrolllogo linear infinite both running; */
   top: 0;
   bottom: 0;
   right: 0;
@@ -189,9 +185,15 @@ a {
     border-top: #b11047 1px solid;
   }
 
+  .hero {
+    align-items: center;
+    justify-content: flex-start;
+  }
+
   .hero svg {
-    width: 115vw;
-    margin-top: -20vh;
+    max-width: 50vh;
+    margin-top: 2vh;
+    transform: rotate(-45deg) translate(-20%, 35%);
   }
 
   .footer li {
@@ -206,4 +208,117 @@ a {
     margin-left: 0;
     margin-top: 2rem;
   }
+}
+
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 980px;
+  padding: 5rem 6rem 6rem 6rem;
+  background-color: #e61c5d;
+  min-height: 100%;
+  color: #fff;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.content a,
+.content__back-link a {
+  display: inline-block;
+  color: #fff;
+  text-shadow: 0 2px #000;
+  transform: translate(0, -1px);
+  border-bottom: solid 0 transparent;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  transition: all 250ms ease;
+}
+
+.content a:hover,
+.content a:active,
+.content a:focus {
+  margin-bottom: -8px;
+  padding-bottom: 5px;
+  border-bottom: solid 3px #000;
+}
+
+.content__back-link {
+  background-color: #ffe98a;
+  padding: 0.5rem 6rem;
+}
+
+.content__back-link a {
+  color: #e61c5d;
+  text-shadow: 0 2px #e7bb01;
+}
+
+.content h1 {
+  color: #ffe98a;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.content h2 {
+  color: #ffe98a;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.content p {
+  margin-bottom: 1.2rem;
+}
+
+.content li {
+  margin-bottom: 1rem;
+}
+
+.content ul {
+  list-style-type: square;
+  padding-left: 3rem;
+}
+
+.content ol {
+  list-style-type: decimal;
+  padding-left: 3rem;
+}
+
+.content small {
+  font-size: 1rem;
+  text-align: right;
+  display: block;
+  color: #fcbfd3;
+  margin-top: 3rem;
+}
+
+.content strong {
+  font-weight: bold;
+}
+
+@media (max-width: 979px) {
+  .content p,
+  .content li {
+    margin-bottom: 1rem;
+  }
+
+  .content {
+    line-height: 1.4;
+    font-size: 1rem;
+    padding: 1rem 2rem 2rem 2rem;
+  }
+
+  .content-back-link {
+    display: block;
+    padding: 3rem;
+  }
+}
+
+.u_rel {
+  position: relative;
+}
+
+.u_zhigh {
+  z-index: 2;
 }

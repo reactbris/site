@@ -2,12 +2,12 @@ import React from "react";
 import Head from "next/head";
 import { colors } from "src/utils/theme";
 
-export default ({ children }) => (
+export default ({ title = "Hi!", children }) => (
   <Head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content={colors.redLight} />
 
-    <title>ReactBris - Hi!</title>
+    <title>ReactBris - {title}</title>
 
     <link rel="stylesheet" href="/static/reset.css" />
     <link rel="stylesheet" href="/static/styles.css" />
