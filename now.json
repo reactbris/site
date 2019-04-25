@@ -18,6 +18,13 @@
       "headers": {
         "Location": "https://www.meetup.com/reactbris/events/rtkfsqyzfbhc/"
       }
+    },
+    {
+      "src": "/intro",
+      "status": 301,
+      "headers": {
+        "Location": "https://reactbris.typeform.com/to/adqHGy"
+      }
     }
   ]
 }
