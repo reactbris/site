@@ -3,6 +3,7 @@
   "public": false,
   "name": "reactbris.org",
   "alias": "reactbris.org",
+  "regions": ["syd1", "sin1"],
   "builds": [{ "src": "package.json", "use": "@now/next" }],
   "github": {
     "silent": true
