@@ -13,10 +13,52 @@
       "headers": { "cache-control": "public, max-age=31536000, immutable" }
     },
     {
+      "src": "/m",
+      "status": 301,
+      "headers": {
+        "Location": "https://www.meetup.com/reactbris/"
+      }
+    },
+    {
       "src": "/m/2019-03",
       "status": 301,
       "headers": {
         "Location": "https://www.meetup.com/reactbris/events/rtkfsqyzfbhc/"
+      }
+    },
+    {
+      "src": "/m/2019-04",
+      "status": 301,
+      "headers": {
+        "Location": "https://www.meetup.com/reactbris/events/rtkfsqyzgbdc/"
+      }
+    },
+    {
+      "src": "/m/2019-05",
+      "status": 301,
+      "headers": {
+        "Location": "https://www.meetup.com/reactbris/events/lxkvwqyzhbbc/"
+      }
+    },
+    {
+      "src": "/m/2019-06",
+      "status": 301,
+      "headers": {
+        "Location": "https://www.meetup.com/reactbris/events/lxkvwqyzjbwb/"
+      }
+    },
+    {
+      "src": "/m/2019-07",
+      "status": 301,
+      "headers": {
+        "Location": "https://www.meetup.com/reactbris/events/lxkvwqyzkbtb/"
+      }
+    },
+    {
+      "src": "/m/2019-08",
+      "status": 301,
+      "headers": {
+        "Location": "https://www.meetup.com/reactbris/events/lxkvwqyzlbzb/"
       }
     },
     {
