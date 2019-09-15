@@ -110,6 +110,14 @@ body {
   font-weight: 400;
 }
 
+@media (max-width: 930px) {
+  .page-error h1 {
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+}
+
 .footer {
   background: #e61c5d;
   border: #00153d 1rem solid;
