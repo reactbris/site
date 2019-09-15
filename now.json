@@ -62,6 +62,34 @@
       }
     },
     {
+      "src": "/m/2019-09",
+      "status": 301,
+      "headers": {
+        "Location": "https://www.meetup.com/reactbris/events/lxkvwqyzmbvb/"
+      }
+    },
+    {
+      "src": "/m/2019-10",
+      "status": 301,
+      "headers": {
+        "Location": "https://www.meetup.com/reactbris/events/lxkvwqyznbcc/"
+      }
+    },
+    {
+      "src": "/m/2019-11",
+      "status": 301,
+      "headers": {
+        "Location": "https://www.meetup.com/reactbris/events/lxkvwqyzpbxb/"
+      }
+    },
+    {
+      "src": "/m/2019-12",
+      "status": 301,
+      "headers": {
+        "Location": "https://www.meetup.com/reactbris/events/lxkvwqyzqbvb/"
+      }
+    },
+    {
       "src": "/intro",
       "status": 301,
       "headers": {
