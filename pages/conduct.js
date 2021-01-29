@@ -63,13 +63,15 @@ class ConductPage extends Component {
           <ul>
             <li>
               <strong>Thomas McCarthy</strong> -{" "}
-              <a href="mailto:tom@reactbris.org">tom@reactbris.org</a> -{" "}
+              <a href="mailto:tom@reactbris.org">organisers@reactbris.org</a> -{" "}
               <a href="https://twitter.com/iamtommcc">@iamtommcc</a>
             </li>
             <li>
               <strong>Lochlan Bunn</strong> -{" "}
-              <a href="mailto:lochlan@reactbris.org">lochlan@reactbris.org</a> -
-              <a href="https://twitter.com/loklaan">@loklaan</a>
+              <a href="mailto:lochlan@reactbris.org">
+                organisers@reactbris.org
+              </a>{" "}
+              -<a href="https://twitter.com/loklaan">@loklaan</a>
             </li>
           </ul>
           <p>
