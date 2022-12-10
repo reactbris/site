@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "isomorphic-fetch": "^2.2.1",
     "meetup-api": "^1.4.37",
     "next": "^9.3.2",
